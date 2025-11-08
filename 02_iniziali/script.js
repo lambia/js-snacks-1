@@ -11,13 +11,13 @@ const getInitials = (array) => {
 		const thisWord = array[i];  //variabile d'appoggio del CICLO
 		const thisInitial = thisWord[0];
 		
-		console.log(`Lavorazione di "${thisWord}". Inizia con "${thisInitial}".`);
+		console.log(i, `Lavorazione di "${thisWord}". Inizia con "${thisInitial}".`);
 		
 		initials.push( thisInitial );
 		// oppure: initials.push( thisWord[0] );
 		// oppure: initials.push( array[i][0] );
 
-		console.log("Stato attuale dell'array: ", initials);
+		console.log(i, "Stato attuale dell'array: ", initials);
 	}
 	
 	return initials;
